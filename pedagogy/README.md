@@ -97,9 +97,6 @@ Sr.No | What Students will do? |	What Simulator will do?	| Purpose of the task
 1.| Simulator will allow student to make connections and will alert him in case of wrong connections made. | Student will slide the power button of the simulator to ON position and will set the Potential difference applied to the PN junction.  | To initiate the simulator
 2.| Simulator will show the green light indicating that the simulator is ready for use.  | Student will choose the desired temperature from the heater and gradually increase the temperature  | To find the current in the PN Junction diode corresponding to the temperature of the Junction.
 3.| Simulator will show the corresponding current in the micro-ammeter  | Student will insert the current corresponding to each temperature of the PN junction and mention these values in the table.  | To get the 103 /T and log10Is values with respect to the changing temperature of the junction.
-4.| Simulator will calculate 103 /T and log10Is values corresponding to each current value entered in the Table. | Student will press the draw Graph button   | To plot graph between 
-10<sup>3</sup> /T and log<sub>10</sub>I<sub>s</sub>
-
+4.| Simulator will calculate 103 /T and log10Is values corresponding to each current value entered in the Table. | Student will press the draw Graph button   | To plot graph between 10<sup>3</sup> /T and log<sub>10</sub>I<sub>s</sub>
 5.| Simulator will show plot between 10<sup>3</sup> /T and log<sub>10</sub>I<sub>s</sub> | Student will choose any two points on the graph and press the calculate slope button  | Student will note the value of the slope and calculate the energy band gap value for a given PN junction and will also calculate the percentage error with the standard value.
-
 6.| Slope of the graph will be calculated. | Student will change the potential difference applied and will repeat the experiment  | Student will again note the value of the slope and calculate the energy band gap value for a given PN junction and will also calculate the percentage error with the standard value.
