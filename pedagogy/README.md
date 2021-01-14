@@ -94,8 +94,12 @@ or type the correct answer below the question.
 
 Sr.No | What Students will do? |	What Simulator will do?	| Purpose of the task
 :--|:--|:--|:--:
-1.| Student will click the power button of the simulator to ON position<br> and One pop up image will appear<br> to ask the correct circuit diagram. | Simulator will allow student to Enable Power<br> and then make connections and <br>will alert him in case of wrong connections made  | To initiate the simulator and to assess the basic understanding of the student about the experiment
-2.| Student will choose the desired load resistance and then connect the circuit to start the experiment. | Simulator will show the green light indicating that it is ready for use and will allow the student to choose the load resistance  | To find the balancing length l1 and l2
-3.| Student will insert the balancing length l1 and l2 corresponding to each load resistance and mention these values in the table. | Simulator will show the corresponding balancing length l1 and l2  | To get the Mean ρ and Mean Y values
-4.| Student will choose length and radius of cross section of the wire whose specific resistance is to be measured | Simulator will calculate Mean ρ and Mean Y values  | To Calculate the specific resistance of the given wire.
-5.| Student will verify the experiment by comparing the calculated value with the standard value | Simulator will Calculate the specific resistance of the given wire  | Student will note if the value of the specific resistance is close to the standard result. If there is more deviation, then the simulator will ask the student to perform the experiment again.
+1.| Simulator will allow student to make connections and will alert him in case of wrong connections made. | Student will slide the power button of the simulator to ON position and will set the Potential difference applied to the PN junction.  | To initiate the simulator
+2.| Simulator will show the green light indicating that the simulator is ready for use.  | Student will choose the desired temperature from the heater and gradually increase the temperature  | To find the current in the PN Junction diode corresponding to the temperature of the Junction.
+3.| Simulator will show the corresponding current in the micro-ammeter  | Student will insert the current corresponding to each temperature of the PN junction and mention these values in the table.  | To get the 103 /T and log10Is values with respect to the changing temperature of the junction.
+4.| Simulator will calculate 103 /T and log10Is values corresponding to each current value entered in the Table. | Student will press the draw Graph button   | To plot graph between 
+10<sup>3</sup> /T and log<sub>10</sub>I<sub>s</sub>
+
+5.| Simulator will show plot between 10<sup>3</sup> /T and log<sub>10</sub>I<sub>s</sub> | Student will choose any two points on the graph and press the calculate slope button  | Student will note the value of the slope and calculate the energy band gap value for a given PN junction and will also calculate the percentage error with the standard value.
+
+6.| Slope of the graph will be calculated. | Student will change the potential difference applied and will repeat the experiment  | Student will again note the value of the slope and calculate the energy band gap value for a given PN junction and will also calculate the percentage error with the standard value.
