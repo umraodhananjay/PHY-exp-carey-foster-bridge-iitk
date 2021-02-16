@@ -1,13 +1,572 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+    <meta charset="UTF-8">
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    
+    
+    <title>Carry_Foster_Simulation</title>
+    <style>
+
+        body{
+            font-family: Calibri;
+        }
+        table,th,td{
+            border: 2px solid fuchsia;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+        }
+        button{
+            border-radius: 5px;
+            padding: 5px;
+            border: 2px solid black;
+            font-weight: bold;
+        }
+        #saz{
+            border-top: 30px solid #634380;
+            border-bottom: 30px solid #634380;
+            border-left: 30px solid #349992;
+            border-right: 30px solid #349992;
+
+            height: 655px;
+            width: 1160px;
+        }
+        #btn_main{
+            cursor: pointer;
+        }
+        .design{
+            cursor: pointer;
+            margin: 5px;
+        }
+
+    </style>
+    <script>
+
+        function funn() {
+            alert('Wrong Answer! Choose again...');
+        }
+
+        function fun2() {
+            alert('Right answer! Now select the value of Load Resistance X');
+            document.getElementById('choose').disabled=false;
+            document.getElementById('choose').style.cursor="pointer";
+            document.getElementById('choose').classList.remove("disabled");
+        }
+
+        function fun3() {
+            alert('Wrong Answer! Choose again...');
+        }
+        function fun4() {
+            alert('Wrong Answer! Choose again...');
+        }
+
+    </script>
+</head>
+<body onload="init();" >
+<center>
+<div  style="margin: 6px 0 0 0">
+
+
+    <div id="saz" style="background-color: #f7eee0">
+        <h2 style="text-align: center;background-color: #634380;font-weight: bolder;padding: 2px 0 2px 0;
+    margin-top:-30px;color: white">
+            CAREY FOSTER'S BRIDGE SIMULATION</h2>
+        <table style="border: none">
+            <tr style="border: none">
+                <td style="border: none">
+                    <table style="border: none;width: 810px;margin: 0px 0 5px 30px;background-color: lightpink;border-radius: 10px">
+                        <tr>
+                            <td style="border: none"><h4>Choose Load Resistence X(In Ohms)</h4></td>
+                            <td style="border: none">
+                                <select id="resist" style="width: 70px;height: 30px;outline: none;border: 1px solid red;border-radius: 7px">
+                                    <option>0.1</option>
+                                    <option>0.2</option>
+                                    <option>0.3</option>
+                                    <option>0.4</option>
+                                    <option>0.5</option>
+                                </select>
+                            </td>
+                            <td style="border: none">
+                                <button type="button" id="choose" class="btn btn-primary disabled"  onclick="choose_resist()"
+                                        disabled    style="outline:none" >Choose</button>
+
+                            </td>
+                            <td style="border: none">
+                                <h3>&nbsp;</span></h3>
+                            </td>
+                            <td style="border: none">
+                                <h4>Selected value is &nbsp;<span id="rest" style="color: red"></span></h4>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr style="border: none">
+                <td style="border: none">
+                    <img id="img_bridge" src="image/bridge.svg" style="display: none">
+                    <img id="img_gal_simple" src="image/simple_gal.svg" style="display: none">
+                    <img id="img_gal_tilt" src="image/galvano_tilt.svg" style="display: none">
+                    <canvas id="mycanvas" style="border: 4px solid teal ;border-radius: 15px;
+                    margin: -30px 0 0 30px;background-image: url(image/back.svg); background-size: 100px 100px;" width="800" height="440"></canvas>
+                </td>
+                <td style="border: none">
+                    <div style="margin:-70px 30px 10px 0px;padding: 5px 0 5px 12px;">
+                        <a href="#" style="text-decoration: none;color: white" data-target="#login" data-toggle="modal">
+                            <button type="button" id="btn_main" class="btn btn-danger" style="width:203px;height:40px;font-size:16px;margin: 10px 0 10px 0;background-color: #ca2222;font-weight: bolder" onclick="main()">ENABLE POWER</button>
+                        </a>
+                        <button type="button" id="btn_main2" class="btn btn-success" style="width:203px;height:40px;font-size:16px;margin: 10px 0 10px 0;background-color: #4CAF50;font-weight:bolder;display: none" onclick="main_green()" >DISABLE POWER</button>
+                        <button style="width:203px;margin: 10px 0 0 0"type="button" id="btn_bench" onclick="main_bench()" class="btn btn-primary disabled" disabled >Place Copper Bench</button>
+                        <button style="margin: 10px 0 0px 0"type="button" id="btn1" onclick="main1()" class="btn btn-danger disabled" disabled>Resistance_1</button>
+                        <button style="margin: 10px 0 0px 0"type="button" id="btn7" onclick="main7()" class="btn btn-danger disabled" disabled  >Resistance_2</button><br>
+                        <button style="margin: 10px 0 10px 0" type="button" id="btn8" onclick="main8()" class="btn btn-danger disabled" disabled  >Resistance_3</button>
+                        <button style="margin: 10px 0 10px 0" type="button" id="btn9" onclick="main9()" class="btn btn-danger disabled" disabled  >Resistance_4</button>
+                        <button style="width: 100px" type="button" id="btn10" onclick="main10()" class="btn btn-primary disabled" disabled  >Galvanometer</button>
+                        <button style="width: 100px" type="button" id="btn2" onclick="main2()" class="btn btn-primary disabled" disabled  >Battery</button>
+                        <button style="width: 100px;margin: 10px 0 10px 0" type="button" id="btn3" onclick="main3()" class="btn btn-success disabled" disabled  >Select Key</button>
+                        <button style="width: 100px;margin: 10px 0 10px 0" type="button" id="btn11" onclick="main11()" class="btn btn-success disabled" disabled  >Close Key</button>
+                        <button style="width: 203px;margin: 0 0 10px 0" type="button" id="btn5" onclick="main5()" class="btn btn-danger disabled" disabled  >Connect Key & Battery</button>
+
+                        <div id="main_btn">
+                            <button style="width: 100px;margin: 0 0 10px 0" type="button" class="btn btn-primary disabled" disabled id="btnl" onclick="main3l()"  >Shift Left</button>
+
+                            <button style="width: 100px;margin: 0 0 10px 0" type="button" class="btn btn-primary disabled" disabled id="btnr" onclick="main3r()"  >Shift Right</button>
+
+                            <button  style="width: 100px;margin: 0 0 10px 0;display: none" type="button" class="btn btn-info" id="btnle" onclick="main3le()"> Shift Left </button>
+
+                            <button  style="width: 100px;margin: 0 0 10px 0;display: none" type="button" class="btn btn-info" id="btnre" onclick="main3re()"  >Shift Right</button>
+
+                            <button style="width: 203px;margin: 0 0 0 0" type="button" class="btn btn-success disabled" disabled id="btne" onclick="main3e()"  > Exchange X with Y </button>
+
+                            <button style="width: 203px;margin: 0 0 0 0;display: none" type="button" class="btn btn-primary" id="btnx" onclick="main3x()">Exchange Y with X</button>
+                        </div>
+
+                        <!-->
+
+                        <div id="main_btn_2" style="display: none">
+                            <button style="width: 100px;margin: 0 0 10px 0;" type="button" class="btn btn-warning "  id="btnl_2" onclick="main3l_2()"  >Shift Left</button>
+
+                            <button style="width: 100px;margin: 0 0 10px 0;" type="button" class="btn btn-warning "  id="btnr_2" onclick="main3r_2()"  >Shift Right</button>
+
+                            <button  style="width: 100px;margin: 0 0 10px 0;display: none" type="button" class="btn btn-primary" id="btnle_2" onclick="main3le_2()"> Shift Left </button>
+
+                            <button  style="width: 100px;margin: 0 0 10px 0;display: none" type="button" class="btn btn-primary" id="btnre_2" onclick="main3re_2()"  >Shift Right</button>
+
+                            <button style="width: 203px;margin: 0 0 0 0;" type="button" class="btn btn-info "  id="btne_2" onclick="main3e_2()"  > Exchange X with Y </button>
+
+                            <button style="width: 203px;margin: 0 0 0 0;display: none" type="button" class="btn btn-warning" id="btnx_2" onclick="main3x_2()">Exchange Y with X</button>
+                        </div>
+
+                    </div>
+                    <h4 class="bg-primary" style="width: 203px;border-radius: 5px;padding: 5px;margin: 0 0 0 20px">Formulas</h4>
+                    <img src="image/formula.png" style="width: 203px;height: 100px;border-radius: 5px;margin: 0 0 0 -17px">
+                </td>
+            </tr>
+            <tr>
+                <td style="border: none">
+                    <table style="width: 810px;border: none;margin: -30px 0 0px 30px;padding: 0 150px 0 0;background-color: lightpink;border-radius: 10px">
+                        <tr  id="l1" >
+                            <td style="border: none">
+                                <h4 style="margin-left: -60px">Length(l1,measured from left side when Load resistance X placed in left) </h4>
+                            </td>
+                            <td style="border: none">
+                                <h4 id="showl" style="border: 1px solid black;margin-right: 30px;padding: 5px 20px 5px 20px;color: red"></h4>
+                            </td>
+                        </tr>
+                        <tr style="display: none" id="l2">
+                            <td style="border: none">
+                                <h4 style="margin-left: -60px">Length(l2,measured from left side when Load resistance X placed in right) </h4>
+                            </td>
+                            <td style="border: none">
+                                <h4 id="showr" style="border: 1px solid black;margin-right: 30px;padding: 5px 20px 5px 20px;color: red"></h4>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <div>
+
+
+        <div class="modal " id="login" style="width: 600px;margin: 0 0 0 390px">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content" style="margin: 0 0 0 0px">
+                    <div class="modal-header bg-primary text-white">
+                        <h4 style="text-align:left">Among the following which Circuit is correct for Carey Foster<br> Bridge Experiment?
+                            <a href="#" style="margin: -35px 0 0 390px" class="btn btn-danger text-white" data-dismiss="modal">X</a></h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="image/cir.png" style="width: 595px;height: 350px;margin: 0 0 0 -270px"><br>
+                        <div style="margin: 0 0 0 -300px">
+                        <button class="btn btn-primary btn-sm mt-3 " onclick="funn()">Image 1</button>
+                        <button class="btn btn-primary btn-sm  mt-3" onclick="fun2()">Image 2</button>
+                        <button class="btn btn-primary btn-sm  mt-3" onclick="fun3()">Image 3</button>
+                        <button class="btn btn-primary btn-sm  mt-3" onclick="fun4()">Image 4</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<div>
+
+    <img src="image/resistance2.png" style="display: none" id="img1">
+    <img src="image/battery2.jpg" style="display: none" id="img2">
+    <img src="image/key_off.png" style="display: none" id="img3">
+    <img src="image/keyon.png" style="display: none" id="img11">
+    <img src="image/gal.png" style="display: none" id="img5">
+    <img src="image/galr.png" style="display: none" id="img6">
+
+</div>
+</div>
+</center>
+<br>
+<div>
+    <center>
+    <h4 style="background-color: #6a1b9a;color: white;padding: 7px;font-family:
+ Arial, Helvetica, sans-serif;text-align: center;width: 1160px">
+        Table 1: To determine the resistance per unit length of the bridge wire (ρ):</h4>
+    <table style="width:1160px">
+        <thead>
+            <tr>
+                <th rowspan="2">S.No.</th>
+                <th rowspan="2">Resistance
+                    connected in decimal<br>
+                    resistance box X (in ohm)
+                </th>
+                <th colspan="2" style="padding: 5px">Zero deflection Position when resistance box is connected
+                </th>
+                <th rowspan="2" style="padding: 5px">(l<sub>2</sub>-l<sub>1</sub>)<br>
+                    ( in cms)
+                </th>
+                <th rowspan="2" style="padding: 5px">ρ = X/ (l<sub>2</sub>-l<sub>1</sub>)<br>
+                    (in ohms)
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    In left gap l<sub>1</sub>
+                    (in cms)
+                </th>
+                <th>In right gap l<sub>2</sub>
+                    (in cms)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>01</th>
+            <td>
+                <input type="number" id="xohm1">
+            </td>
+            <td>
+                <input type="number" id="xleft1">
+            </td>
+            <td>
+                <input type="number" id="xright1">
+            </td>
+            <td id="xll1"></td>
+            <td id="row1"></td>
+        </tr>
+        <tr>
+            <th>02</th>
+            <td>
+                <input type="number" id="xohm2">
+            </td>
+            <td>
+                <input type="number" id="xleft2">
+            </td>
+            <td>
+                <input type="number" id="xright2">
+            </td>
+            <td id="xll2"></td>
+            <td id="row2"></td>
+        </tr>
+        <tr>
+            <th>03</th>
+            <td>
+                <input type="number" id="xohm3">
+            </td>
+            <td>
+                <input type="number" id="xleft3">
+            </td>
+            <td>
+                <input type="number" id="xright3">
+            </td>
+            <td id="xll3"></td>
+            <td id="row3"></td>
+        </tr>
+        <tr>
+            <th>04</th>
+            <td>
+                <input type="number" id="xohm4">
+            </td>
+            <td>
+                <input type="number" id="xleft4">
+            </td>
+            <td>
+                <input type="number" id="xright4">
+            </td>
+            <td id="xll4"></td>
+            <td id="row4"></td>
+        </tr>
+        <tr>
+            <th>05</th>
+            <td>
+                <input type="number" id="xohm5">
+            </td>
+            <td>
+                <input type="number" id="xleft5">
+            </td>
+            <td>
+                <input type="number" id="xright5">
+            </td>
+            <td id="xll5"></td>
+            <td id="row5"></td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+
+            <td><span style="font-weight: bold">Mean ρ = </span><span id="x_display"></span><span style="font-weight: bold">Ohms</span></td>
+        </tr>
+        </tbody>
+    </table>
+        <button class="btn btn-primary" style="width:150px;margin: 10px 0 0 0;padding: 7px 20px 7px 20px;"
+                onclick="calculate_table1()">Calculate</button>
+</div>
+</center>
+<br>
+<center>
+<div class="text-center" style="padding:1px;background-color: lightpink;border-radius: 10px;width: 1160px">
+    <h4 class="text-center" style="font-weight: bolder">NOTE :- To observe reading for Table2</h4>
+    <button id="must_click" class="btn btn-warning disabled" style="width: 150px" disabled onclick="for_table2()">Must Click here</button>
+
+</div>
+</center>
+
+<center>
+<h4 style="background-color: #6a1b9a;color: white;padding: 7px;font-family:
+ Arial, Helvetica, sans-serif;text-align: center;width: 1160px">Table 2: For the resistance of the given wire (Y):</h4>
+
+<div>
+    <table style="width: 1160px">
+        <thead>
+        <tr>
+            <th rowspan="2">S.No.</th>
+            <th rowspan="2">Resistance
+                connected in decimal<br>
+                resistance box X (in ohm)
+
+            </th>
+            <th colspan="2" style="padding: 5px">Zero deflection Position when resistance box is connected
+            </th>
+            <th rowspan="2" style="padding: 5px">(l<sub>2</sub>-l<sub>1</sub>)<br>
+                ( in cms)
+            </th>
+            <th rowspan="2" style="padding: 5px">Y = X- ρ (l<sub>2</sub>-l<sub>1</sub>)
+                <br>
+                (in ohms)
+            </th>
+        </tr>
+        <tr>
+            <th>
+                In left gap l<sub>1</sub>
+                (in cms)
+            </th>
+            <th>In right gap l<sub>2</sub>
+                (in cms)
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>01</th>
+            <td>
+                <input type="number" id="yohm1">
+            </td>
+            <td>
+                <input type="number" id="yleft1">
+            </td>
+            <td>
+                <input type="number" id="yright1">
+            </td>
+            <td id="yll1"></td>
+            <td id="wayi1"></td>
+        </tr>
+        <tr>
+            <th>02</th>
+            <td>
+                <input type="number" id="yohm2">
+            </td>
+            <td>
+                <input type="number" id="yleft2">
+            </td>
+            <td>
+                <input type="number" id="yright2">
+            </td>
+            <td id="yll2"></td>
+            <td id="wayi2"></td>
+        </tr>
+        <tr>
+            <th>03</th>
+            <td>
+                <input type="number" id="yohm3">
+            </td>
+            <td>
+                <input type="number" id="yleft3">
+            </td>
+            <td>
+                <input type="number" id="yright3">
+            </td>
+            <td id="yll3"></td>
+            <td id="wayi3"></td>
+        </tr>
+        <tr>
+            <th>04</th>
+            <td>
+                <input type="number" id="yohm4">
+            </td>
+            <td>
+                <input type="number" id="yleft4">
+            </td>
+            <td>
+                <input type="number" id="yright4">
+            </td>
+            <td id="yll4"></td>
+            <td id="wayi4"></td>
+        </tr>
+        <tr>
+            <th>05</th>
+            <td>
+                <input type="number" id="yohm5">
+            </td>
+            <td>
+                <input type="number" id="yleft5">
+            </td>
+            <td>
+                <input type="number" id="yright5">
+            </td>
+            <td id="yll5"></td>
+            <td id="wayi5"></td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+
+            <td><span style="font-weight: bold">Mean Y =</span> <span id="y_display"></span><span style="font-weight: bold">Ohms</span></td>
+        </tr>
+        </tbody>
+    </table>
+    <button id="cal_table_2" class="btn btn-primary" style="margin:10px 0 0 0;width:150px;padding: 7px 20px 7px 20px;cursor: not-allowed" disabled
+            onclick="calculate_table2()">Calculate</button>
+</div>
+</center>
+
+<center>
+<div style="width: 1160px">
+    <table style="border: none;">
+        <tr style="border: none">
+            <td style="border: none">
+                <div>
+                    <table style="width: 570px;text-align: center;margin:20px 0 0 0px;border: none;background-color: lightpink;border-radius: 7px">
+                        <tr style="border: none">
+                            <td style="border: none">
+                                <h4>The given Length(l) of the wire is</h4>
+                            </td>
+                            <td style="border: none">
+                                <select id="ddlViewBy1">
+                                    <option value="1">10</option>
+                                    <option value="2">20</option>
+                                    <option value="3">30</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr >
+                            <td style="border: none">
+                                <h4>The given Radius(r) of the wire is(in cm)</h4>
+                            </td>
+                            <td style="border: none">
+                                <select id="ddlViewBy2" >
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="3">04</option>
+                                    <option value="3">05</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <button onclick="values()" class="btn btn-primary" style="margin:10px 0 0 0;width: 150px;
+            border: none;padding: 7px 20px 7px 20px;cursor: pointer" >Select</button>
+
+                    <h4 style="margin: 10px 0 0 5px">Selected length is = <span id="length" style="color: red"></span>
+                        and selected radius is = <span id="radius" style="color: red"></span></h4>
+
+                </div>
+            </td>
+            <td style="border: none">
+                <div style="width: 570px"><p>&nbsp;</p>
+                    <div style="background-color: lightpink;border-radius: 7px;padding: 1px">
+
+                    <h4 style="text-align: center;margin: 5px 0 15px 0">The value of specific resistance of the material of unknown wire-</h4>
+                    <h4 style="text-align: center"><input type="text" placeholder="Enter value of Y here " id="userY">*π*r<sup>2</sup>)/l</h4>
+                    </div>
+
+                    <button onclick="specific()" class="btn btn-primary" style="width: 150px;
+                    border: none;padding: 7px 20px 7px 20px;cursor: pointer;margin-top: 10px" >Calculate</button>
+                    <h4 style="text-align: center">The value of specific resistance is =&nbsp;<span id="specres" style="color: red" ></span></h4>
+
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+    <div>
+        <table style="width: 1160px;text-align: center;margin:20px 0 0 0px;border: none;background-color: lightpink;border-radius: 7px">
+            <tr style="border: none">
+                <td style="border: none">
+                    <h4>Verify the experiment by entering value of specific resistance :</h4>
+                </td>
+
+            </tr>
+            <tr >
+                <td style="border: none;padding: 0 0 10px 0">
+                    <input type="number" style="width: 250px" id="sp_val" placeholder="Enter value of multiple of power of 10">
+                    <input type="number" style="width: 250px" id="pow_val" placeholder="Enter value of power of 10">
+                    <select id="ddl" style="height: 25px">
+                        <option>Select unit here</option>
+                        <option value="1">Ohm.m</option>
+                        <option value="2">Ohm.cm</option>
+
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+        <button type="button" id="err_button_cal" style="width: 150px;margin: 10px 0 0 0" class="btn btn-primary disabled" disabled onclick="calculate_error()">Click Here</button>
+
+    </div>
+
+</center>
+<hr>
+
+<p style="bottom:0;float:right;font-size:6px">&copy;Abhay Gupta</p>
+<script src="js/carry_js.js"></script>
+<script src="js/mouseevent.ob.js"></script>
 </body>
 </html>
