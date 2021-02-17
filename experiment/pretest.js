@@ -106,9 +106,9 @@
         a: "AB",                  ///// Write the option 1 inside double quotes
         b: "BD",                  ///// Write the option 2 inside double quotes
         c: "AC",                  ///// Write the option 3 inside double quotes
-        d: "BD"                   ///// Write the option 4 inside double quotes
+        d: "BC"                   ///// Write the option 4 inside double quotes
       },
-      correctAnswer: "d"                ///// Write the correct option inside double quotes
+      correctAnswer: "b"                ///// Write the correct option inside double quotes
     },                                  ///// To add more questions, copy the section below 
     									                  ///// this line
 
