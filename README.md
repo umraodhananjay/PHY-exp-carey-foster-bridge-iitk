@@ -24,7 +24,7 @@ where X = unknown resistance connected in the left gap, Y = resistance of the wi
 
 Specific resistance of the given wire: 
 
- Ks = (πr2/l) Y     ----- (3) 
+ Ks = (πr2/l) Y     ---- (3) 
 
 Where r is the radius and l is the length of the given wire. Value of both the parameters is provided to the student.<br><br>
 <img src="images/fig1.PNG">
