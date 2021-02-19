@@ -12,17 +12,18 @@
 12.	Click on “Battery” button and then click on drawing board.
 13.	Click on “Select Key” button and then click on drawing board.
 14.	Click on the “Connect Key and Battery”.
-15.	Now click on the “Shift Left” and note down the reading and click “Shift Right” and note down the reading.
-16.	Enter these observations in “Table1”.
-17.	Click on the calculate button to calculate the mean value ρ.
-18.	To calculate the resistance of the given wire click on the “Must Click Here’ button and repeat the above procedure. 
-19.	Click the calculate button below “Table2”.
-20.	Choose the length of the wire to the drop down.
-21.	Choose the radius of the wire to the drop down.
-22.	Enter the value of the resistance in the box.
-23.	Click the “Calculate” button below the specific resistance.
-24.	Enter the value of Multiple of power
-25.	Enter the value of power in the box.
-26.	Enter the selected unit in the box.
-27.	Enter the standard value of specific resistance.
-28.	Press “Click Here” button to calculate the % Error.
+15.	Click on "close key" button.
+16.	Now click on the “Shift Left” and note down the reading and click “Shift Right” and note down the reading.
+17.	Enter these observations in “Table1”.
+18.	Click on the calculate button to calculate the mean value ρ.
+19.	To calculate the resistance of the given wire click on the “Must Click Here’ button and repeat the above procedure. 
+20.	Click the calculate button below “Table2”.
+21.	Choose the length of the wire to the drop down.
+22.	Choose the radius of the wire to the drop down.
+23.	Enter the value of the resistance in the box.
+24.	Click the “Calculate” button below the specific resistance.
+25.	Enter the value of Multiple of power
+26.	Enter the value of power in the box.
+27.	Enter the selected unit in the box.
+28.	Enter the standard value of specific resistance.
+29.	Press “Click Here” button to calculate the % Error.
