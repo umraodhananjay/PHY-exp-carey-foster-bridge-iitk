@@ -4,19 +4,19 @@ The Carey Foster’s bridge is as in the figure1. One meter long wire of mangani
 
 Resistance per unit length of the wire of bridge 
 
-ρ = X/ (l2-l1) ohm/cm----- (1) 
+ρ = X/ (l<sub>2</sub>-l<sub>1</sub>) ohm/cm----- (1) 
 
-Where l1 = balancing length on the bridge wire measured from the left end when known   resistance X is connected in left gap of the bridge and zero resistance is connected in right gap of the bridge and l2 = balancing length of the bridge wire measured from the left end on interchanging the positions of X and Y. 
+Where l<sub>1</sub> = balancing length on the bridge wire measured from the left end when known   resistance X is connected in left gap of the bridge and zero resistance is connected in right gap of the bridge and l<sub>2</sub> = balancing length of the bridge wire measured from the left end on interchanging the positions of X and Y. 
 
 Unknown resistance of the given wire  
 
-Y = X – (l2 – l1) ρ----- (2) 
+Y = X – (l<sub>2</sub> – l<sub>1</sub>) ρ----- (2) 
 
-where X = unknown resistance connected in the left gap, Y = resistance of the wire connected in the left gap, l1 and l2 respectively are the balancing lengths of the bridge wire measured from the left end, before and after interchanging the positions of X and Y. 
+where X = unknown resistance connected in the left gap, Y = resistance of the wire connected in the left gap, l<sub>1</sub> and l<sub>2</sub> respectively are the balancing lengths of the bridge wire measured from the left end, before and after interchanging the positions of X and Y. 
 
 Specific resistance of the given wire: 
 
- Ks = (πr2/l) Y     ----- (3) 
+ K<sub>s</sub> = (πr<sup>2</sup>/l) Y     ----- (3) 
 
 Where r is the radius and l is the length of the given wire. Value of both the parameters is provided to the student.<br><br>
 <img src="images/fig1.PNG">
