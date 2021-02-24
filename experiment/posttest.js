@@ -90,7 +90,7 @@
 
   const myQuestions = [
     {
-      question: "The value of the balancing length l1 when the unknown resistance is connected across AB and a resistance of 5 ohms is taken out from the resistance box?",  ///// Write the question inside double quotes
+      question: "The value of the balancing length l<sub>1</sub> when the unknown resistance is connected across AB and a resistance of 5 ohms is taken out from the resistance box?",  ///// Write the question inside double quotes
       answers: {
         a: "48 cm",                  ///// Write the option 1 inside double quotes
         b: "49 cm",                  ///// Write the option 2 inside double quotes
