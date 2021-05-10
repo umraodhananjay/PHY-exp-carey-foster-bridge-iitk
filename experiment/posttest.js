@@ -89,24 +89,35 @@
 
 
     const myQuestions = [{
-            question: "1.This is a sample question:", ///// Write the question inside double quotes
+            question: "1.The value of the balancing length l<sup>1</sup> when the unknown resistance is connected across AB and a resistance of 5 ohms is taken out from the resistance box:", ///// Write the question inside double quotes
             answers: {
-                a: "This is a sample answer A", ///// Write the option 1 inside double quotes
-                b: "This is a sample answer B", ///// Write the option 2 inside double quotes
+                a: "48.0 cm", ///// Write the option 1 inside double quotes
+                b: "49.0 cm", ///// Write the option 2 inside double quotes
+                c: "47.0 cm", ///// Write the option 2 inside double quotes
+                d: "46.0 cm", ///// Write the option 2 inside double quotes
+
             },
             correctAnswer: "a" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "<img src='images/8.PNG'><br>Identify the location of Secondary electron detector",  ///// Write the question inside double quotes
+      question: "2.Specific resistance of manganin wire is of the following order",  ///// Write the question inside double quotes
       answers: {
-        a: "<img src='images/1b.png'>",                  ///// Write the option 1 inside double quotes
-        b: "<img src='images/1a.png'>",                  ///// Write the option 2 inside double quotes
-        c: "<img src='images/1c.PNG'>",      },
-      correctAnswer: "c"                ///// Write the correct option inside double quotes
+        a: "4.33 x10<sup>-5</sup> Ohm.cm",                  ///// Write the option 1 inside double quotes
+        b: "4.33 x10<sup>-7</sup> Ohm.cm",                  ///// Write the option 2 inside double quotes
+        c: "4.33 x10<sup>-9</sup> Ohm.cm",
+        d: "4.33 x10<sup>-5</sup> Ohm.m",     },
+      correctAnswer: "a"                ///// Write the correct option inside double quotes
     },
-
-
+                         {
+      question: "3.Specific resistance of Constantan wire is approximately:",  ///// Write the question inside double quotes
+      answers: {
+        a: "4.0 x10<sup>-7</sup> Ohm.cm",                  ///// Write the option 1 inside double quotes
+        b: "4.0 x10<sup>-5</sup> Ohm.cm",                  ///// Write the option 2 inside double quotes
+        c: "4.0 x10<sup>-9</sup> Ohm.cm",
+        d: "4.0 x10<sup>-5</sup> Ohm.m",},
+      correctAnswer: "b"                ///// Write the correct option inside double quotes
+    },
         
     ];
 

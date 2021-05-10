@@ -89,24 +89,36 @@
 
 
      const myQuestions = [{
-            question: "1.This is a sample question:", ///// Write the question inside double quotes
+            question: "1.The principle on which the Carey Foster Bridge experiment based is:", ///// Write the question inside double quotes
             answers: {
-                a: "This is a sample answer A", ///// Write the option 1 inside double quotes
-                b: "This is a sample answer B", ///// Write the option 2 inside double quotes
+                a: "Wheat Stone Bridge", ///// Write the option 1 inside double quotes
+                b: "Cyclotron", ///// Write the option 2 inside double quotes
+                c: "EM Waves", ///// Write the option 2 inside double quotes
+                d: "Hartley Oscillator", ///// Write the option 2 inside double quotes
             },
             correctAnswer: "a" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "<img src='images/8.PNG'><br>Identify the location of Secondary electron detector",  ///// Write the question inside double quotes
+      question: "Refer the Figure of Carey Foster Bridge experiment <img src='images/pretest_q.png'>",  ///// Write the question inside double quotes
       answers: {
-        a: "<img src='images/1b.png'>",                  ///// Write the option 1 inside double quotes
-        b: "<img src='images/1a.png'>",                  ///// Write the option 2 inside double quotes
-        c: "<img src='images/1c.PNG'>",      },
-      correctAnswer: "c"                ///// Write the correct option inside double quotes
+        a: "AB",                  ///// Write the option 1 inside double quotes
+        b: "BD",                  ///// Write the option 2 inside double quotes
+        c: "AC",
+        d: "BC",
+      },
+      correctAnswer: "b"                ///// Write the correct option inside double quotes
     },
-
-
+        {
+      question: "Length of the wire on which Jockey is slided is:",  ///// Write the question inside double quotes
+      answers: {
+        a: "80cm",                  ///// Write the option 1 inside double quotes
+        b: "100cm",                  ///// Write the option 2 inside double quotes
+        c: "90cm",
+        d: "50cm",
+      },
+      correctAnswer: "b"                ///// Write the correct option inside double quotes
+    },
 
      ];
 
