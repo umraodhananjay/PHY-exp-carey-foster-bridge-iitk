@@ -1,3 +1,6 @@
+
+#### Please use the [reference](https://github.com/virtual-labs/ph3-exp-dev-process/blob/main/pedagogy/README.org) document to fill this template.  Follow the [link](https://github.com/virtual-labs/ph3-exp-dev-process/tree/main/sample/pedagogy) to view a sample pedagogy document.
+
 ## Pedagogy (Round 1)
 <p align="center">
 
@@ -70,7 +73,6 @@ Sr. No |	Learning Objective	| Task to be performed by <br> the student  in the s
 3.| Student will be able to Predict the resistance of the unknown wire by using the resistance per unit length calculated the balancing length of the wire and the resistance of the resistance box. | Student will make circuit connections followed by taking observations for balancing length l1 and l2 corresponding to the resistance of the resistance box. Student will also enter these lengths in table 1 and table 2 and the value of unknown resistance will be calculated. | The value of the balancing length l1 when the unknown resistance is connected across AB and a resistance of 5 ohms is taken out from the resistance box: <br> a) 48.0 cm <br> b) 49.0 cm<br>c) 47.0 cm<br>d) 46.0 cm
 4.| Student will examine the radius and length of the unknown wire and calculate the value of specific resistance of the material of the wire. | Student will choose the radius and length of the unknown wire and will use the value of the unknown resistance calculated from the table 2, to calculate the value of specific resistance of the material of unknown wire.| Specific resistance of manganin wire is of the following order.<br>a) 4.33 x10-5 Ohm.cm<br>b) 4.33 x10-7 Ohm.cm <br>c) 4.33 x10-9 Ohm.cm <br>d) 4.33 x10-5 Ohm.m
 5.| Conclude the specific resistance and to calculate the percentage error with the standard value. | Students will compare the value of the specific resistance of the material of the wire calculated with the standard value to calculate the percentage error occurred in the observation. | On increasing the radius of the wire the specific resistance of the material of the wire:<br>a) Increases<br>b) decreases<br>c) remains constant<br>d) NOT
-
 
 
 You can add more question. All questions may not be as MCQ
