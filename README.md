@@ -4,7 +4,6 @@
 <b>Discipline | <b>Physical Sciences
 :--|:--|
 <b> Lab | <b> Basics of Physics
-
 <b> Experiment|     <b> 1. Carey Foster's Bridge to Measure Specific Resistance of Material
 
 <h5> About the Experiment : </h5> <br>
