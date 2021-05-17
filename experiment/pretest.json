@@ -20,10 +20,10 @@
 , {
 	"question": "3.Length of the wire on which Jockey is slided is:",
 	"answers": {
-		"a": "80cm",
-		"b": "100cm",
-		"c": "90cm",
-		"d": "50cm"
+		"a": "80 cm",
+		"b": "100 cm",
+		"c": "90 cm",
+		"d": "50 cm"
 	},
 	"correctAnswer": "b"
 }]
