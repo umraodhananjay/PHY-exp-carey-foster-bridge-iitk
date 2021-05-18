@@ -12,3 +12,6 @@ b. 4.33 x10-9 Ohm.cm<br>
 <b>c. 4.33 x10-5 Ohm.cm	</b>
 d. 4.33 x10-5 Ohm.m<br>
 
+Specific resistance of Constantan wire is approximately:<br>
+a) 4.0 x10^-7 Ohm.cm <br>	b) 4.0 x10^-5 Ohm.cm<br>	c) 4.0 x10^-9 Ohm.cm <br>	d) 4.0 x10^-5 Ohm.m
+
