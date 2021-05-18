@@ -9,7 +9,7 @@ d. 49 cm<br><br>
 Q 2. Specific resistance of manganin wire is of the following order?<br>
 a. 4.33 x10-7 Ohm.cm<br>
 b. 4.33 x10-9 Ohm.cm<br>
-<b>c. 4.33 x10-5 Ohm.cm	</b>
+<b>c. 4.33 x10-5 Ohm.cm	</b><br>
 d. 4.33 x10-5 Ohm.m<br>
 
 Specific resistance of Constantan wire is approximately:<br>
