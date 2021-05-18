@@ -7,9 +7,9 @@ b)Cyclotron<br>
 c) EM Waves<br>
 d) Hartley Oscillator <br>
 
-2) In Carey Foster Bridge experiment the galvanometer G is connected across branch<br><img src="images/pretest_q.png">
+2) In Carey Foster Bridge experiment the galvanometer G is connected across branch<br><img src="images/pretest_q.png"><br>
 a) AB<br>
-<b> BD<br></b>
+<b>b)BD<br></b>
 c)  AC<br>
 d) BC<br>
 
