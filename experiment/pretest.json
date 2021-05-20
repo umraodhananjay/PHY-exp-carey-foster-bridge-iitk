@@ -1,0 +1,29 @@
+[{
+	"question": "1.The principle on which the Carey Foster Bridge experiment based is?",
+	"answers": {
+		"a": "Wheat Stone Bridge",
+		"b": "Cyclotron",
+		"c": "EM Waves",
+		"d": "Hartley Oscillator"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "2.Refer the Figure of Carey Foster Bridge experiment<br><img src='images/pretest_q.png'>",
+	"answers": {
+		"a": "AB",
+		"b": "BD",
+		"c": "AC",
+		"d": "BC"
+	},
+	"correctAnswer": "b"
+}
+, {
+	"question": "3.Length of the wire on which Jockey is slided is:",
+	"answers": {
+		"a": "80 cm",
+		"b": "100 cm",
+		"c": "90 cm",
+		"d": "50 cm"
+	},
+	"correctAnswer": "b"
+}]

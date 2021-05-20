@@ -11,8 +11,8 @@
 11.	Click on “Galvanometer” button and then click on the drawing box.
 12.	Click on “Battery” button and then click on drawing board.
 13.	Click on “Select Key” button and then click on drawing board.
-14.	Click on the “Connect Key and Battery”.
-15.	Click on "close key" button.
+14.	click on "close Key" button.
+15.	Click on the “Connect Key and Battery”.
 16.	Now click on the “Shift Left” and note down the reading and click “Shift Right” and note down the reading.
 17.	Enter these observations in “Table1”.
 18.	Click on the calculate button to calculate the mean value ρ.

@@ -1,0 +1,29 @@
+[{
+	"question": "1. The value of the balancing length l<sub>1</sub> when the unknown resistance is connected across AB and a resistance of 5 ohms is taken out from the resistance box",
+	"answers": {
+		"a": "48 cm",
+		"b": "49 cm",
+		"c": "47 cm",
+		"d": "46 cm"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "2. Specific resistance of manganin wire is of the following order?",
+	"answers": {
+		"a": "4.33 x10 <sup>-5</sup> Ohm.cm",
+		"b": "4.33 x10 <sup>-7</sup> Ohm.cm",
+		"c": "4.33 x10 <sup>-9</sup> Ohm.cm",
+		"d": "4.33 x10 <sup>-5</sup> Ohm.m"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "3. Specific resistance of Constantan wire is approximately:",
+	"answers": {
+		"a": "4.33 x10<sup>-7</sup> Ohm.cm",
+		"b": "4.33 x10<sup>-5</sup> Ohm.cm",
+		"c": "4.33 x10<sup>-9</sup> Ohm.cm",
+		"d": "4.33 x10<sup>-5</sup> Ohm.m"
+	},
+	"correctAnswer": "b"
+
+}]
