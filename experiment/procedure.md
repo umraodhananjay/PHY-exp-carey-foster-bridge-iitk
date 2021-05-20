@@ -27,3 +27,4 @@
 27.	Enter the selected unit in the box.
 28.	Enter the standard value of specific resistance.
 29.	Press “Click Here” button to calculate the % Error.
+
