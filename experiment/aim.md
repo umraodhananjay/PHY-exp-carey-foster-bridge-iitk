@@ -1,2 +1,2 @@
-### To Measure Specific Resistance of Material using Carey Foster's Bridge 
+To Measure Specific Resistance of Material using Carey Foster's Bridge 
 
